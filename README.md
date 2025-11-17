@@ -6,24 +6,24 @@ A PowerShell tool that automates moving a user's data from an old workstation to
 
 ### Profile Folders
 Copies these if they exist:
-- Desktop
-- Documents
-- Pictures
-- Favorites
-- Links
-- Signatures
+- `Desktop`
+- `Documents`
+- `Pictures`
+- `Favorites`
+- `Links`
+- `Signatures`
 
 ### Outlook Items
 - Signature folder from AppData\Roaming\Microsoft\Signatures
 - PST files from:
-  - AppData\Local\Microsoft\Outlook
-  - AppData\Roaming\Microsoft\Outlook
-  - Documents\Outlook Files
-  - C:\Users\<User>\Outlook  
+  - `AppData\Local\Microsoft\Outlook`
+  - `AppData\Roaming\Microsoft\Outlook`
+  - `Documents\Outlook Files`
+  - `C:\Users\<User>\Outlook`  
 - PSTs are placed in a PSTs folder on the new device. The folder is removed if no PSTs exist.
 
 ### Quick Access
-Copies Recent\AutomaticDestinations to restore Quick Access pins.
+Copies `Recent\AutomaticDestinations` to restore Quick Access pins.
 
 ### Logging
 Creates a folder on the technician desktop:  
@@ -69,7 +69,3 @@ Printer and mapped drive migration
 CSV driven multi-user transfers  
 Better error handling  
 A small GUI for technicians (once more functions are added)
-
-
-
-
