@@ -14,13 +14,13 @@ Copies these if they exist:
 - `Signatures`
 
 ### Outlook Items
-- Signature folder from AppData\Roaming\Microsoft\Signatures
+- Signature folder from `AppData\Roaming\Microsoft\Signatures`
 - PST files from:
   - `AppData\Local\Microsoft\Outlook`
   - `AppData\Roaming\Microsoft\Outlook`
   - `Documents\Outlook Files`
-  - `C:\Users\<User>\Outlook`  
-- PSTs are placed in a PSTs folder on the new device. The folder is removed if no PSTs exist.
+  - `C:\Users\<User>\Outlook`
+- PSTs are placed in a `PSTs` folder on the new device. The folder is removed if no PSTs exist.
 
 ### Quick Access
 Copies `Recent\AutomaticDestinations` to restore Quick Access pins.
