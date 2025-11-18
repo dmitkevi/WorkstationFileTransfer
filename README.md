@@ -1,6 +1,6 @@
 # Workstation File Transfer Script
 
-A PowerShell tool that automates moving a user's data from an old workstation to a new one across UNC paths. It copies common profile folders, Outlook items, PST files, and Quick Access history. The script also creates transfer logs on both machines for easy review.
+A PowerShell tool that automates moving a user's data from an old workstation to a new one across UNC paths. It copies common profile folders, Outlook items, PST files, Google Earth KMZ files, and Quick Access history. The script also creates transfer logs on both machines for easy review.
 
 ## What It Transfers
 
@@ -21,6 +21,9 @@ Copies these if they exist:
   - `Documents\Outlook Files`
   - `C:\Users\<User>\Outlook`
 - PSTs are placed in a `PSTs` folder on the new device. The folder is removed if no PSTs exist.
+
+### Google Earth KMZ Files
+- Copies Google Earth folder from `AppData\LocalLow\Google\Google Earth`
 
 ### Quick Access
 Copies `Recent\AutomaticDestinations` to restore Quick Access pins.
@@ -56,7 +59,8 @@ The script checks paths and only transfers items that are present.
 ### Functions:
 userFolders  
 outlookSignatures  
-outlookPSTs  
+outlookPSTs
+googleEarth
 quickAccessBackup  
 copyLogs  
 
