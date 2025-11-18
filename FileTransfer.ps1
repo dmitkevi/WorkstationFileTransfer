@@ -66,6 +66,16 @@ Write-Host "Inside of" $item
     }
 }
 
+# Google Earth KMZ files
+function googleEarth {
+   
+    $src="\\$OldComputerName\C$\Users\$TargetUser\AppData\LocalLow\Google\GoogleEarth"
+    $target="\\$NewComputerName\C$\Users\$TargetUser\AppData\LocalLow\Google\GoogleEarth"
+        if (Test-Path $src) {
+            robocopy $src $target /E /Z /MT:32 /W:1 /R:1 /V /NP /unilog+:"$env:USERPROFILE\Desktop\FileTransferLogs\$TargetUser\FileTransferLogs.txt" /TEE
+        }
+}
+
 # Quick Access Backup
 function quickAccessBackup {
 
@@ -89,5 +99,6 @@ Write-Host "Remote Log File Dropped in \\$NewComputerName\C$\Users\$TargetUser\A
 userFolders
 outlookSignatures
 outlookPSTs
+googleEarth
 quickAccessBackup
 copyLogs
