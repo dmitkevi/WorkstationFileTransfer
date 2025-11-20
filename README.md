@@ -57,16 +57,17 @@ The script checks paths and only transfers items that are present.
 
 ## Script Structure
 ### Functions:
-userFolders  
-outlookSignatures  
+userFolders
+outlookSignatures
 outlookPSTs
 googleEarth
-quickAccessBackup  
+quickAccessBackup
 copyLogs  
 
 Each function handles one part of the migration for easier updates.
 
 ## Future Ideas
+Local OneNote remappings
 New Profile Pre-Creation
 Browser bookmark transfer  
 Printer and mapped drive migration  
